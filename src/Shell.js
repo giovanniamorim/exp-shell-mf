@@ -8,7 +8,7 @@ const Shell = () => {
 
     return (
         <>
-        <div className='container-shell'>
+        <div className=''>
             {showCatalog && (
                 <div style={{ width: '75%', height: '100%', backgroundColor: 'blue', position: 'fixed', left: 0 }}>
                     <Parcel config={() => System.import('@experian/exp-catalog-mf')} />
@@ -22,7 +22,7 @@ const Shell = () => {
             )}
 
             <div>
-                <Parcel config={() => System.import('@experian/exp-checkout-mf')} />
+                <Parcel config={() => System.import('@experian/exp-cart-mf')} />
             </div>
         </div>
         </>
